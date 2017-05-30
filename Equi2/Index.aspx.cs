@@ -13,15 +13,38 @@ namespace Equi2
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            ServicioDeLogin servicioDeLogin = new ServicioDeLogin();
-            if (servicioDeLogin.esLoginCorrecto(inpUsuario.Text, inpPassword.Text))
+            lblMensajeError.Text = "";
+            bool error = false;
+            if (inpUsuario.Text.Length == 0)
             {
-                // Vamos a la pantalla principal
+                lblMensajeError.Text = "- El nombre de usuario no puede estar vacio.\n";
+                error = true;
             }
             else
             {
-                // Mostramos cuadro de error
+                if (inpPassword.Text.Length == 0)
+                {
+                    lblMensajeError.Text += "- Debe introducir una contraseña.\n";
+                    error = true;
+                }
             }
+            
+            if (lblMensajeError.Text.Length == 0)
+            {
+                ServicioDeLogin servicioDeLogin = new ServicioDeLogin();
+                if (servicioDeLogin.esLoginCorrecto(inpUsuario.Text, inpPassword.Text))
+                {
+                    // Vamos a la pantalla principal
+                    Session["Usuario"] = inpUsuario.Text;
+                    Response.Redirect("/SesionTest.aspx");
+                }
+                else
+                {
+                    lblMensajeError.Text += "- Usuario o contraseña incorrectos.";
+                    error = true;
+                }
+            }
+            panelError.Visible = error;
         }
     }
 }
