@@ -13,7 +13,7 @@
 <body>
     <form id="form1" class="w3-container" runat="server">
     
-        <h2 class="w3-center">Login</h2>
+        <h2 class="w3-center">Acceso a la plataforma</h2>
    
         <div class="">
             <asp:Panel ID="panelError" runat="server" CssClass="w3-panel w3-red w3-display-container" Visible="False">
