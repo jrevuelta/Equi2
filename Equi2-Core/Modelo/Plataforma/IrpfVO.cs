@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Equi2_Core.Modelo.Plataforma
 {
-    class IrpfVO
+    public class IrpfVO
     {
-        int idIRPF;
-        int irpfValor;
+        public int idIRPF;
+        public int irpfValor;
     }
 }

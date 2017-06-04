@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\IrpfDAO.cs" />
     <Compile Include="DAO\IvaDAO.cs" />
     <Compile Include="DAO\UsuariosDAO.cs" />
     <Compile Include="Modelo\Administracion\UsuarioVO.cs" />

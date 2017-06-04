@@ -36,7 +36,7 @@ namespace Equi2
                 {
                     // Vamos a la pantalla principal
                     Session["Usuario"] = inpUsuario.Text;
-                    Response.Redirect("/SesionTest.aspx");
+                    Response.Redirect("/App/Principal.aspx");
                 }
                 else
                 {

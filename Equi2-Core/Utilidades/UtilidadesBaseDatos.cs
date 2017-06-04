@@ -9,7 +9,7 @@ namespace Equi2.Utilidades
 	{
 		public static string cadenaConexion(Configuracion config)
 		{
-            string cadenaConexion = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="+config.getBaseDatosUsuario()+"; Jet OLEDB:System database=E:\\Equi2\\VIA.MDW;User ID=usuario;Password=;";
+            string cadenaConexion = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="+config.getBaseDatosUsuario()+"; Jet OLEDB:System database="+Configuracion.rutaMDW+";User ID=usuario;Password=;";
             return cadenaConexion;
 		}
 

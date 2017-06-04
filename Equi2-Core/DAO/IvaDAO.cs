@@ -31,9 +31,9 @@ namespace Equi2_Core.DAO
             {
                 iva = new IvaVO();
                 object[] array = (object[])o;
-                iva.idIva = (int)array[1];
-                iva.ivaValor = (int)array[2];
-                iva.ivaTipo = (string)array[3];
+                iva.idIva = (int)array[0];
+                iva.ivaValor = (int)array[1];
+                iva.ivaTipo = (string)array[2];
             }
 
             return iva;
@@ -54,9 +54,11 @@ namespace Equi2_Core.DAO
             {
                 iva = new IvaVO();
                 object[] array = (object[])o;
-                iva.idIva = (int)array[1];
-                iva.ivaValor = (int)array[2];
-                iva.ivaTipo = (string)array[3];
+                iva.idIva = (int)array[0];
+                iva.ivaValor = (int)array[1];
+                iva.ivaTipo = array[2].ToString();
+                
+                
                 listaIVA.Add(iva);
             }
             return listaIVA;
