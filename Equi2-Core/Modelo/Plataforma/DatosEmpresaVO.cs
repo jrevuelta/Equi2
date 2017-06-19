@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Equi2_Core.Modelo.Plataforma
 {
-    class DatosEmpresaVO
+    public class DatosEmpresaVO
     {
-        int idDatosEmpresa;
-        string empresaLogo; // Esto en base de datos es un blob o imagen
-        string linea1;
-        string linea2;
-        string linea3;
-        string linea4;
-        string linea5;
-        string linea6;
-        string pie;
+        public int idDatosEmpresa;
+        public string empresaLogo; // Esto en base de datos es un blob o imagen
+        public string linea1;
+        public string linea2;
+        public string linea3;
+        public string linea4;
+        public string linea5;
+        public string linea6;
+        public string pie;
     }
 }

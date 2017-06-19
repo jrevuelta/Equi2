@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Equi2_Core.Modelo.Plataforma
 {
-    class VeterinarioVO
+    public class VeterinarioVO
     {
         int idVeterinario;
     }

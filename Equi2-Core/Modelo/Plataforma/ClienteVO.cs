@@ -6,36 +6,37 @@ using System.Threading.Tasks;
 
 namespace Equi2_Core.Modelo.Plataforma
 {
-    class ClienteVO
+    public class ClienteVO
     {
-        int idCliente;
-        List<VeterinarioVO> listaVeterinarios;
-        DatosEmpresaVO datosEmpresa;
-        ClienteTipoVO clienteTipo;
-        string clienteNombre;
-        string clienteDireccion;
-        string clienteLocalidad;
-        ProvinciaVO clienteProvincia;
-        string clienteNif;
-        string clienteTelefono;
-        string clienteTelefMovil;
-        string clienteFax;
-        string clienteMail;
-        string facturaNombre;
-        string facturaDireccion;
-        string facturaLocalidad;
-        ProvinciaVO facturaProvincia;
-        string facturaCP;
-        string facturaTelefono;
-        string facturaFax;
-        string facturaMail;
-        string facturaNIF;
-        IrpfVO facturaIRPF;
-        IvaVO facturaIVA;
-        string contacto;
-        string personaContacto;
-        string ttelefonoContacto;
-        string observaciones;
+        public int idCliente;
+        public VeterinarioVO veterinario;
+        public DatosEmpresaVO datosEmpresa;
+        public ClienteTipoVO clienteTipo;
+        public string clienteNombre;
+        public string clienteDireccion;
+        public string clienteLocalidad;
+        public ProvinciaVO clienteProvincia;
+        public string clienteCP;
+        public string clienteNif;
+        public string clienteTelefono;
+        public string clienteTelefMovil;
+        public string clienteFax;
+        public string clienteMail;
+        public string facturaNombre;
+        public string facturaDireccion;
+        public string facturaLocalidad;
+        public ProvinciaVO facturaProvincia;
+        public string facturaCP;
+        public string facturaTelefono;
+        public string facturaFax;
+        public string facturaMail;
+        public string facturaNIF;
+        public IrpfVO facturaIRPF;
+        public IvaVO facturaIVA;
+        public string contacto;
+        public string personaContacto;
+        public string telefonoContacto;
+        public string observaciones;
 
     }
 }

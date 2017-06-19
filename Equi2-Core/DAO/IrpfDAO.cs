@@ -1,15 +1,13 @@
 ﻿using Equi2.Utilidades;
 using Equi2_Core.Modelo.Plataforma;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Equi2_Core.DAO
 {
     public class IrpfDAO
     {
+        private static int N_CAMPOS = 2;
+
         Configuracion config;
 
         public IrpfDAO(string usuario)
@@ -29,7 +27,7 @@ namespace Equi2_Core.DAO
             // La tabla IRPF tiene 2 campos solo
             string sql = "select * from IRPF where IdIRPF=" + idIRPF;
 
-            List<object> resultado = UtilidadesBaseDatos.consultaSelectListaMultiple(config, 2, sql);
+            List<object> resultado = UtilidadesBaseDatos.consultaSelectListaMultiple(config, N_CAMPOS, sql);
 
             foreach (object o in resultado)
             {
@@ -51,7 +49,7 @@ namespace Equi2_Core.DAO
             List<IrpfVO> listaIRPF = new List<IrpfVO>();
             string sql = "select * from IRPF";
             
-            List<object> resultado = UtilidadesBaseDatos.consultaSelectListaMultiple(config, 2, sql);
+            List<object> resultado = UtilidadesBaseDatos.consultaSelectListaMultiple(config, N_CAMPOS, sql);
             IrpfVO irpf = null;
             foreach (object o in resultado)
             {

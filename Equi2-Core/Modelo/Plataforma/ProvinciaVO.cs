@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Equi2_Core.Modelo.Plataforma
 {
-    class ProvinciaVO
+    public class ProvinciaVO
     {
-        int idProvincia;
-        string nombre;
+        public int idProvincia;
+        public string nombre;
     }
 }

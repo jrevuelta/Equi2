@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Equi2_Core.Modelo.Plataforma
 {
-    class ClienteTipoVO
+    public class ClienteTipoVO
     {
-        int idClienteTipo;
-        string clienteTipo;
+        public int idClienteTipo;
+        public string clienteTipo;
     }
 }

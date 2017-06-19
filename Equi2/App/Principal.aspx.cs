@@ -32,31 +32,11 @@ namespace Equi2.App
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            IrpfVO irpf = new IrpfVO();
-            irpf.idIRPF = 4;
-            irpf.irpfValor = 50;
-            IrpfDAO irpfDAO = new IrpfDAO(usuario);
+            ClienteDAO clienteDAO = new ClienteDAO(usuario);
+            ClienteVO cliente = clienteDAO.recuperarClientePorID(1);
 
-            // Insertar nuevo
-
-            irpfDAO.insertarNuevoTipoDeIRPF(irpf);
-
-            // modificar
-            irpf.irpfValor = 33;
-            irpfDAO.modificarTipoDeIRPF(irpf);
-
-            // recuperar por id
-            irpf = irpfDAO.recuperarIRPFporID(irpf.idIRPF);
-
-            // eliminar
-
-            irpfDAO.eliminarTipoDeIRPF(irpf);
-
-            // listar
-
-            List<IrpfVO> listaIRPF = irpfDAO.listarTodosIRPF();
-
-            int tamano = listaIRPF.Count;
+            List<ClienteVO> listaDeClientes = clienteDAO.listarTodosClientes();
+            listaDeClientes.Count();
 
         }
     }
