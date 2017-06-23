@@ -66,6 +66,7 @@
     </Compile>
     <Compile Include="Servicios\ServicioDeLogin.cs" />
     <Compile Include="Utilidades\Configuracion.cs" />
+    <Compile Include="Utilidades\Encriptacion.cs" />
     <Compile Include="Utilidades\UtilidadesBaseDatos.cs" />
   </ItemGroup>
   <ItemGroup>
