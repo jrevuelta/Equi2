@@ -41,16 +41,18 @@ namespace Equi2_Core.DAO
         {
             UsuarioVO usuario = null;
 
-            String sql = "Select id_usuario,usuario,password,borrado from usuarios where usuario='" + nombre + "' and borrado = false";
+            String sql = "Select usuario,password,admin from usuarios where usuario='" + nombre + "' and borrado = false";
 
-            List<object> resultado = UtilidadesBaseDatos.consultaSelectListaMultiple(conf, 4, sql);
+            List<object> resultado = UtilidadesBaseDatos.consultaSelectListaMultiple(conf, 3, sql);
 
             foreach (object o in resultado)
             {
                 usuario = new UsuarioVO();
                 object[] array = (object[])o;
-                usuario.usuario = (string)array[1];
-                usuario.password = (string)array[2];
+                usuario.usuario = (string)array[0];
+                usuario.password = (string)array[1];
+                usuario.admin = (bool)array[2];
+
             }
 
             return usuario;

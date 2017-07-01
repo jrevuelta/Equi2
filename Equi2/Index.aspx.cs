@@ -8,7 +8,10 @@ namespace Equi2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Usuario"] != null)
+            {
+                Session["Usuario"] = null;
+            }
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)

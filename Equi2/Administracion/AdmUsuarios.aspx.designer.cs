@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Equi2.App {
+namespace Equi2.Administracion {
     
     
-    public partial class Principal {
+    public partial class AdmUsuarios {
         
         /// <summary>
         /// HyperLink1 control.
@@ -29,15 +29,6 @@ namespace Equi2.App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblNombreUsuario;
-        
-        /// <summary>
-        /// hlAdmin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hlAdmin;
         
         /// <summary>
         /// form1 control.

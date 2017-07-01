@@ -1,11 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Principal.aspx.cs" Inherits="Equi2.App.Principal" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Equi2.Administracion.Index" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head runat="server">
-<title>Equi2 - Principal</title>
+    <title>Administración</title>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/>
@@ -15,11 +14,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
 </head>
 <body class ="w3-light-gray">
-   
+    
         <!-- Top container -->
         <div class="w3-bar w3-top w3-black w3-large" style="z-index: 4">
             <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>Menu</button>
-            <span class ="w3-bar-item w3-center">Equi2 - Principal</span>
+            <span class ="w3-bar-item w3-center">Equi2 - Administración </span>
             <span class="w3-bar-item w3-right">
                 <asp:HyperLink ID="HyperLink1" runat="server" CssClass="w3-bar-item w3-button w3-right" NavigateUrl="~/Index.aspx" ToolTip="Cerrar sesión"><i class="fa fa-sign-in"></i></asp:HyperLink>
             </span>
@@ -29,11 +28,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
     <br/>
   <div class="w3-container w3-row">
+    <div class="w3-col s4">
+     
+    </div>
     <div class="w3-col s8 w3-bar">
         <asp:Label ID="lblNombreUsuario" runat="server" Text="---"></asp:Label><br />
      <!-- Botón de configuración del usuario -->
-        <asp:HyperLink ID="hlAdmin" runat="server" NavigateUrl="~/Administracion/Index.aspx"><i class="fa fa-cog"></i></asp:HyperLink>
-      
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
 
     </div>
   </div>
@@ -43,8 +44,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
   <div class="w3-bar-block">
     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Cerrar Menú</a>
-      <a href="Principal.aspx" class="w3-bar-item w3-button w3-padding  w3-blue"><i class="fa fa-home fa-fw"></i>  Inicio</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Otros</a>
+      <a href="../App/Principal.aspx" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-home fa-fw"></i>  Inicio</a>
+      <a href="AdmUsuarios.aspx" class="w3-bar-item w3-button w3-padding "><i class="fa fa-users fa-fw"></i>  Usuarios</a>
     <br/><br/>
   </div>
 </nav>
@@ -55,7 +56,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
    <form id="form1" runat="server">     
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px;margin-top:55px;">
-    <p>Contenido</p>
+    <p>Contenido administracion de usuarios</p>
     </div>
 
     </form>

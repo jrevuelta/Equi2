@@ -32,5 +32,16 @@ namespace Equi2_Core.Servicios
 
             return correcto;
         }
+
+        /// <summary>
+        /// Obtiene un usuario a traves de su nombre de usuario
+        /// </summary>
+        /// <param name="login">String - Nombre de usuario</param>
+        /// <returns>UsuarioVO - Contiene la información de un usuario</returns>
+        public UsuarioVO obtenerUsuarioPorLogin (string login)
+        {
+            UsuarioVO usuario = usuarioDAO.recuperarUsuarioPorLogin(login);
+            return usuario;
+        }
     }
 }
