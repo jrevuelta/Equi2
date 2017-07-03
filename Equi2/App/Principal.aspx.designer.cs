@@ -22,13 +22,13 @@ namespace Equi2.App {
         protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
         
         /// <summary>
-        /// lblNombreUsuario control.
+        /// hlNombreUsuario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNombreUsuario;
+        protected global::System.Web.UI.WebControls.HyperLink hlNombreUsuario;
         
         /// <summary>
         /// hlAdmin control.

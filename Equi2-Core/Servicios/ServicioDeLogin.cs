@@ -43,5 +43,16 @@ namespace Equi2_Core.Servicios
             UsuarioVO usuario = usuarioDAO.recuperarUsuarioPorLogin(login);
             return usuario;
         }
+
+        /// <summary>
+        /// Actualiza los datos de un usuario
+        /// </summary>
+        /// <param name="usuario">UsuarioVO - Contiene la información a guardar del usuario</param>
+        /// <returns>int - Numero de registros afectados</returns>
+        public int actualizarDatosDeUsusario (UsuarioVO usuario)
+        {
+            int retorno = usuarioDAO.actualizarDatosUsuario(usuario);
+            return retorno;
+        }
     }
 }

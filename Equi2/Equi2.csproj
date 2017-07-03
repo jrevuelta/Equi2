@@ -96,7 +96,10 @@
   <ItemGroup>
     <Content Include="Administracion\AdmUsuarios.aspx" />
     <Content Include="Administracion\Index.aspx" />
+    <Content Include="App\EdicionUsuario.aspx" />
     <Content Include="App\Principal.aspx" />
+    <Content Include="css\raleway.css" />
+    <Content Include="css\w3.css" />
     <Content Include="Index.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -128,6 +131,13 @@
     </Compile>
     <Compile Include="Administracion\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\EdicionUsuario.aspx.cs">
+      <DependentUpon>EdicionUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\EdicionUsuario.aspx.designer.cs">
+      <DependentUpon>EdicionUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="App\Principal.aspx.cs">
       <DependentUpon>Principal.aspx</DependentUpon>

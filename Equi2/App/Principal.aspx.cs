@@ -22,7 +22,7 @@ namespace Equi2.App
 
                 usuario.usuario = (String)Session["Usuario"];
                 usuario = servicioDeLogin.obtenerUsuarioPorLogin(usuario.usuario);
-                lblNombreUsuario.Text = "Bienvenido: " + usuario.usuario;
+                hlNombreUsuario.Text = "Bienvenido: " + usuario.usuario;
                 conf.setBaseDatosUsusario(usuario.usuario);
                 hlAdmin.Visible = usuario.admin;
                 

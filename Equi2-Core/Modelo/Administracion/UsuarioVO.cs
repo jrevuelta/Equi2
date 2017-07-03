@@ -12,6 +12,8 @@ namespace Equi2_Core.Modelo.VO
         public string usuario;
         public string password;
         public bool admin;
+        public string email;
+        public string telefono;
 
     }
 }
