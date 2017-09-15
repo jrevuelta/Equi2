@@ -18,7 +18,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <!-- Top container -->
         <div class="w3-bar w3-top w3-black w3-large" style="z-index: 4">
             <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>Menu</button>
-            <span class ="w3-bar-item w3-center">Equi2 - Editar datos de usuario</span>
+            <span class ="w3-bar-item w3-center w3-hide-small">Equi2 - Editar datos de usuario</span>
             <span class="w3-bar-item w3-right">
                 <asp:HyperLink ID="HyperLink1" runat="server" CssClass="w3-bar-item w3-button w3-right" NavigateUrl="~/Index.aspx" ToolTip="Cerrar sesión"><i class="fa fa-sign-in"></i></asp:HyperLink>
             </span>

@@ -98,9 +98,13 @@
     <Content Include="Administracion\Index.aspx" />
     <Content Include="App\EdicionUsuario.aspx" />
     <Content Include="App\Principal.aspx" />
+    <Content Include="css\dataTables.jqueryui.min.css" />
+    <Content Include="css\jquery-ui.css" />
     <Content Include="css\raleway.css" />
     <Content Include="css\w3.css" />
     <Content Include="Index.aspx" />
+    <Content Include="js\jquery-1.12.4.js" />
+    <Content Include="js\jquery.dataTables.min.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

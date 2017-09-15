@@ -34,6 +34,17 @@ namespace Equi2_Core.Servicios
         }
 
         /// <summary>
+        /// Recupera un usuario por su Identificador
+        /// </summary>
+        /// <param name="idUsuario">int - Identificador del usuario</param>
+        /// <returns>UsuarioVO - Contiene la información del usuario</returns>
+        public UsuarioVO obtenerUsuarioPorID (int idUsuario)
+        {
+            UsuarioVO usuario = usuarioDAO.recuperarUsuario(idUsuario);
+            return usuario;
+        }
+
+        /// <summary>
         /// Obtiene un usuario a traves de su nombre de usuario
         /// </summary>
         /// <param name="login">String - Nombre de usuario</param>
@@ -45,6 +56,16 @@ namespace Equi2_Core.Servicios
         }
 
         /// <summary>
+        /// Obtiene todos los usuarios de la base de datos
+        /// </summary>
+        /// <returns>List<UsuarioVO> listado de usuarios</returns>
+        public List<UsuarioVO> obtenerTodosLosUsuarios()
+        {
+            List<UsuarioVO> listaDeUsuarios = usuarioDAO.obtenerTodosUsuarios();
+            return listaDeUsuarios;
+        }
+
+        /// <summary>
         /// Actualiza los datos de un usuario
         /// </summary>
         /// <param name="usuario">UsuarioVO - Contiene la información a guardar del usuario</param>
@@ -52,6 +73,17 @@ namespace Equi2_Core.Servicios
         public int actualizarDatosDeUsusario (UsuarioVO usuario)
         {
             int retorno = usuarioDAO.actualizarDatosUsuario(usuario);
+            return retorno;
+        }
+
+        /// <summary>
+        /// Crea un nuevo usuario en la base de datos a partir de los datos pasados como parámetros
+        /// </summary>
+        /// <param name="usuario">UsuarioVO - Contiene la información de un usuario</param>
+        /// <returns>int - Numero de usuarios creados</returns>
+        public int crearNuevoUsuario (UsuarioVO usuario)
+        {
+            int retorno = usuarioDAO.altaUsuario(usuario);
             return retorno;
         }
     }
